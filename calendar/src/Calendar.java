@@ -1,5 +1,4 @@
 public class Calendar {
-
     /**
      * Пн Вт Ср Чт Пт Сб Вс
      * 01 02 03 04 05 06 07
@@ -10,7 +9,8 @@ public class Calendar {
      *
      */
     public static void main(String[] args) {
-        int day = 1;
+        int day;
+        day = 1;
 
         while (day < 32) {
             String dayPrint = day + " ";
@@ -19,14 +19,13 @@ public class Calendar {
                 dayPrint = "0" + dayPrint;
             }
 
-//            System.out.printf("%02d ", day);
-
+//            System.out.printf("%02d ", day); если число меньше, чем из двух цифр, то добавить слева "ноль"
 
             int d = day % 7;
             if (d == 0) {
                 System.out.println();
             }
-
+                System.out.print(dayPrint);
             day++;
         }
     }
