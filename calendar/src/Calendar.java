@@ -23,9 +23,12 @@ public class Calendar {
 
             int d = day % 7;
             if (d == 0) {
-                System.out.println();
-            }
                 System.out.print(dayPrint);
+                System.out.println();
+            } else {
+                System.out.print(dayPrint);
+            }
+
             day++;
         }
     }
