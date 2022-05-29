@@ -8,6 +8,13 @@ public class Calendar {
      * 22 23 24 25 26 27 28
      * 29 30 31
      *
+     * Пн Вт Ср Чт Пт Сб Вс
+     *       01 02 03 04 05
+     * 06 07 08 09 10 11 12
+     * 13 14 15 16 17 18 19
+     * 20 21 22 23 24 25 26
+     * 27 28 29 30 31
+     *
      */
     public static void main(String[] args) {
         int day = 1;
@@ -19,7 +26,7 @@ public class Calendar {
                 dayPrint = "0" + dayPrint;
             }
 
-//            System.out.printf("%02d ", day);
+            System.out.printf("%02d ", day);
 
 
             int d = day % 7;
